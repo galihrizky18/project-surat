@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  input[type="radio"] {
+    visibility: visible !important; /* Pastikan radio button terlihat saat dicetak */
+    opacity: 1;
+  }
+  .print-hidden {
+    display: none;
+  }
+
+  .print-visible {
+    display: block;
+  }
+
+  .print-radio-button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    margin-right: 10px;
+  }
+}
