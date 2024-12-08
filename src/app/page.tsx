@@ -7,7 +7,7 @@ const page = () => {
     <SidebarComponent>
       <div className="w-full">
         <div className="flex flex-row w-full ">
-          {/* Konten */}
+          {/* Isi konten */}
           <JudulComponent title="Dashboard" />
         </div>
       </div>
