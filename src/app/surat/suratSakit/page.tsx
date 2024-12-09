@@ -60,7 +60,8 @@ const page = () => {
   `;
 
   return (
-    <div className="w-[559px] h-[792px] text-xs border border-black">
+    // <div className="w-[589px] h-[832px] flex flex-col justify-center items-center border border-black">
+    <div className="p-5 w-[559px] h-[792px] text-xs border border-black">
       {/* Isi Surat */}
       <div className="m-5 ">
         {/* KOP SURAT */}
@@ -151,7 +152,7 @@ const page = () => {
                       <div className="inline-flex items-center">
                         <label
                           className="relative flex items-center cursor-pointer"
-                          htmlFor="html"
+                          htmlFor="jeniskelamin"
                         >
                           <input
                             name="jenisKelamin"
@@ -165,7 +166,7 @@ const page = () => {
                           {/* <span className="absolute bg-slate-800 w-5 h-5   rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span> */}
                         </label>
                         <label
-                          className={`ml-2 text-slate-600 cursor-pointer text-[0.7rem] ${
+                          className={`text-black ml-2  cursor-pointer text-[0.7rem] ${
                             jenisKelamin === "Laki" ? "" : "line-through"
                           }`}
                           htmlFor="html"
@@ -193,7 +194,7 @@ const page = () => {
                           {/* <span className="absolute bg-slate-800 w-5 h-5 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span> */}
                         </label>
                         <label
-                          className={`ml-2 text-slate-600 cursor-pointer text-[0.7rem] ${
+                          className={`text-black ml-2 cursor-pointer text-[0.7rem] ${
                             jenisKelamin === "Perempuan" ? "" : "line-through"
                           }`}
                           htmlFor="react"
@@ -278,7 +279,7 @@ const page = () => {
         {/* FOOTER */}
         <div className="mt-10 grid grid-cols-3 ">
           <div className="col-span-1 flex flex-row items-center text-center justify-center ">
-            <ReactQR value={barcodeValue} size={130} />
+            <ReactQR value={barcodeValue} size={120} />
           </div>
           <div className="col-span-2 flex flex-col justify-end items-end text-[0.7rem] ">
             {/* Detail Surat */}
@@ -305,6 +306,7 @@ const page = () => {
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 
